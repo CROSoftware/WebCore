@@ -182,7 +182,6 @@ setup(
 			'WebOb',  # HTTP request and response objects, and HTTP status code exceptions
 			'pathlib2; python_version < "3.4"',  # Path manipulation utility lib; builtin in 3.4 and 3.5.
 		],
-	tests_require = tests_require,
 	
 	extras_require = {
 			# ### Recommended Environments
