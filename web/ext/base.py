@@ -13,7 +13,7 @@ except:
 	pass
 
 try:
-	from collections import Generator
+	from collections.abc import Generator
 except ImportError:
 	def _tmp(): yield None  # pragma: no cover
 	Generator = type(_tmp())
