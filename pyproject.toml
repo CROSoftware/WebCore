@@ -1,0 +1,122 @@
+
+[project]
+name = "WebCore"
+version = "2.0.5"
+description = "A powerful web development nanoframework so small it's not even a microframework."
+keywords = ["marrow", "web.core", "web.ext"]
+readme = "README.rst"
+authors = [
+    {name = "Alice Bevan-McGregor", email = "alice@gothcandy.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.2",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Internet :: WWW/HTTP :: WSGI",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "WebOb",
+    "marrow.package<2.0",
+]
+license = "MIT"
+requires-python = ">=3.12"
+
+[project.urls]
+Homepage = "https://github.com/marrow/WebCore/"
+Downloads = "https://github.com/marrow/WebCore/releases"
+
+[project.optional-dependencies]
+development = [
+    "backlash",
+    "ipython",
+    "ptpython",
+    "pudb",
+    "pytest",
+    "pytest-capturelog",
+    "pytest-cov",
+    "pytest-flakes",
+    "waitress",
+    "web.dispatch.object",
+]
+production = [
+    "flup6",
+]
+object = [
+    "web.dispatch.object",
+]
+route = [
+    "web.dispatch.route",
+]
+traversal = [
+    "web.dispatch.traversal",
+]
+cli = [
+    "web.command",
+]
+template = [
+    "cinje",
+    "web.template",
+]
+database = [
+    "pymongo",
+    "web.db",
+]
+asset = [
+    "webassets",
+]
+bson = [
+    "pymongo",
+]
+yaml = [
+    "pyyaml",
+]
+waitress = [
+    "waitress",
+]
+tornado = [
+    "tornado",
+]
+flup = [
+    "flup6",
+]
+cherrypy = [
+    "cherrypy",
+]
+paste = [
+    "paste",
+]
+eventlet = [
+    "eventlet",
+]
+gevent = [
+    "gevent",
+]
+diesel = [
+    "diesel",
+]
+bjoern = [
+    "bjoern",
+]
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
