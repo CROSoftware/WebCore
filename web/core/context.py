@@ -6,7 +6,7 @@
 
 from __future__ import unicode_literals
 
-from collections import MutableMapping
+from collections.abc import MutableMapping
 
 
 # ## Mapping Class
